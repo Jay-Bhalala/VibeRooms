@@ -16,11 +16,10 @@ VibeRooms is a virtual study room web application designed to enhance productivi
 - **Backend**: Node.js, Express
 - **Real-time Communication**: WebSockets with socket.io
 - **Database**: Firebase
-- **Deployment**: Can be deployed on platforms like Heroku, AWS, or Firebase Hosting
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
@@ -38,7 +37,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 2. **Set up the Backend**
 
-   Navigate to the server directory and install dependencies & Start the backend server:
+   Navigate to the server directory and install dependencies & start the backend server:
 
    ```bash
    cd server
