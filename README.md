@@ -54,16 +54,3 @@ These instructions will get you a copy of the project up and running on your loc
    cd ../client
    npm install
    npm start
-
-## Usage
-
-After setting up the project, you can access the various features through the web interface:
-
-- **Customize your room**: Go to the settings page to choose a theme and ambient sound.
-- **Chat**: Use the chat interface on the main page to communicate with others.
-- **Manage Tasks**: Add and track tasks using the task tracker interface.
-- **Pomodoro Timer**: Start the Pomodoro timer from the dashboard to focus on your tasks.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
