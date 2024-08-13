@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
+import ThemePage from './pages/ThemePage';
+import ChatPage from './pages/ChatPage';
+import TimerPage from './pages/TimerPage';
+import TaskPage from './pages/TaskPage';
+import NotFoundPage from './pages/NotFoundPage';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ThemeProvider>
+        <div className="App">
+          <Navbar />
+          <Switch>
+            <Route path="/" exact component={HomePage} />
+            <Route path="/themes" component={ThemePage} />
+            <Route path="/chat" component={ChatPage} />
+            <Route path="/timer" component={TimerPage} />
+            <Route path="/tasks" component={TaskPage} />
+            <Route component={NotFoundPage} />
+          </Switch>
+        </div>
+      </ThemeProvider>
+    </Router>
   );
 }
 
